@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -15,6 +16,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     let cellIdentifier:String = "cell"
     let korean = ["에스프레소","아메리카노","카페라떼","카페모카","바닐라라떼","카라멜 마끼아또","콜드브루"]
     let english = ["espresso","americano","cafe latte","cafe moca","vanila latte","caramel macchiato","cold brew"]
+    var movie = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +25,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.customTableView.dataSource = self
         self.customTableView.delegate = self
 //        self.customTableView.register(UITableViewCell.self, forCellReuseIdentifier: self.cellIdentifier)
+        getMovieList()
     }
 
     
@@ -32,6 +35,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             return self.korean.count
         case 1:
             return self.english.count
+        case 2:
+            return self.movie.count
         default:
             return 0
         }
@@ -39,14 +44,28 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: UITableViewCell = customTableView.dequeueReusableCell(withIdentifier: self.cellIdentifier, for: indexPath)
-        let test = indexPath.section == 0 ? self.korean[indexPath.row] : self.english[indexPath.row]
+//        let test = indexPath.section == 0 ? self.korean[indexPath.row] : self.english[indexPath.row]
+        let test = getItemLabel(section: indexPath.section, index: indexPath.row)
         cell.textLabel?.text = test
         
         return cell
     }
     
+    func getItemLabel(section:Int, index:Int) -> String{
+        switch section {
+        case 0:
+            return self.korean[index]
+        case 1:
+            return self.english[index]
+        case 2:
+            return self.movie[index]
+        default:
+            return ""
+        }
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 3
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -55,9 +74,31 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             return "[맛있는 커피]"
         case 1:
             return "[Delicious Coffee]"
+        case 2:
+            return "[MOVIE List]"
         default:
             return ""
         }
+    }
+    
+    func getMovieList(){
+        print("getMovieList()")
+        let parameters:Parameters = [
+            "query" : "반지"
+        ]
+        Network.shared.getMovieList(parameters: parameters, completion: { (data)->(Void) in
+            do{
+                let res:MovieModel = try JSONDecoder().decode(MovieModel.self, from: data)
+                for item in res.items {
+                    self.movie.append(item.title)
+                }
+                self.customTableView.reloadData()
+                print("res Data = \(res)")
+                print("response Data = \(data)")
+            }catch {
+                print(error)
+            }
+        })
     }
 }
 
