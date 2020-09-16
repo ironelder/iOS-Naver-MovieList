@@ -3,19 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9736A40482263E4C73FA7AE2 /* Pods_NaverMovieList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8057004A0DD05FFC4C890D96 /* Pods_NaverMovieList.framework */; };
 		99321131250F0376004C21EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99321130250F0376004C21EA /* AppDelegate.swift */; };
 		99321133250F0376004C21EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99321132250F0376004C21EA /* SceneDelegate.swift */; };
 		99321135250F0376004C21EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99321134250F0376004C21EA /* ViewController.swift */; };
 		99321138250F0376004C21EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99321136250F0376004C21EA /* Main.storyboard */; };
 		9932113A250F0379004C21EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99321139250F0379004C21EA /* Assets.xcassets */; };
 		9932113D250F0379004C21EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9932113B250F0379004C21EA /* LaunchScreen.storyboard */; };
+		99321145250F301E004C21EA /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99321144250F301E004C21EA /* Config.swift */; };
+		99321147250F39A0004C21EA /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99321146250F39A0004C21EA /* Network.swift */; };
+		99321149250F4E27004C21EA /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99321148250F4E27004C21EA /* MovieModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8057004A0DD05FFC4C890D96 /* Pods_NaverMovieList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NaverMovieList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9932112D250F0375004C21EA /* NaverMovieList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NaverMovieList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99321130250F0376004C21EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99321132250F0376004C21EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,11 @@
 		99321139250F0379004C21EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9932113C250F0379004C21EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9932113E250F0379004C21EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99321144250F301E004C21EA /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		99321146250F39A0004C21EA /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		99321148250F4E27004C21EA /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		B77855EF3A8191F4D168C88A /* Pods-NaverMovieList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaverMovieList.release.xcconfig"; path = "Target Support Files/Pods-NaverMovieList/Pods-NaverMovieList.release.xcconfig"; sourceTree = "<group>"; };
+		FC4AB4BC11906A8B2E9A36FF /* Pods-NaverMovieList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaverMovieList.debug.xcconfig"; path = "Target Support Files/Pods-NaverMovieList/Pods-NaverMovieList.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9736A40482263E4C73FA7AE2 /* Pods_NaverMovieList.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		082E82D4A44E11267ACC3BB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8057004A0DD05FFC4C890D96 /* Pods_NaverMovieList.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		72DBF205D5F5A424CB81A281 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC4AB4BC11906A8B2E9A36FF /* Pods-NaverMovieList.debug.xcconfig */,
+				B77855EF3A8191F4D168C88A /* Pods-NaverMovieList.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		99321124250F0375004C21EA = {
 			isa = PBXGroup;
 			children = (
 				9932112F250F0375004C21EA /* NaverMovieList */,
 				9932112E250F0375004C21EA /* Products */,
+				72DBF205D5F5A424CB81A281 /* Pods */,
+				082E82D4A44E11267ACC3BB9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +93,9 @@
 				99321139250F0379004C21EA /* Assets.xcassets */,
 				9932113B250F0379004C21EA /* LaunchScreen.storyboard */,
 				9932113E250F0379004C21EA /* Info.plist */,
+				99321144250F301E004C21EA /* Config.swift */,
+				99321146250F39A0004C21EA /* Network.swift */,
+				99321148250F4E27004C21EA /* MovieModel.swift */,
 			);
 			path = NaverMovieList;
 			sourceTree = "<group>";
@@ -74,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 99321141250F0379004C21EA /* Build configuration list for PBXNativeTarget "NaverMovieList" */;
 			buildPhases = (
+				C3A876218A3B3EE08A382129 /* [CP] Check Pods Manifest.lock */,
 				99321129250F0375004C21EA /* Sources */,
 				9932112A250F0375004C21EA /* Frameworks */,
 				9932112B250F0375004C21EA /* Resources */,
+				E31B04FC877BF40A3E92DC3A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +168,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C3A876218A3B3EE08A382129 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NaverMovieList-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E31B04FC877BF40A3E92DC3A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NaverMovieList/Pods-NaverMovieList-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NaverMovieList/Pods-NaverMovieList-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NaverMovieList/Pods-NaverMovieList-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		99321129250F0375004C21EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99321149250F4E27004C21EA /* MovieModel.swift in Sources */,
+				99321147250F39A0004C21EA /* Network.swift in Sources */,
 				99321135250F0376004C21EA /* ViewController.swift in Sources */,
+				99321145250F301E004C21EA /* Config.swift in Sources */,
 				99321131250F0376004C21EA /* AppDelegate.swift in Sources */,
 				99321133250F0376004C21EA /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +362,7 @@
 		};
 		99321142250F0379004C21EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC4AB4BC11906A8B2E9A36FF /* Pods-NaverMovieList.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +381,7 @@
 		};
 		99321143250F0379004C21EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B77855EF3A8191F4D168C88A /* Pods-NaverMovieList.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
