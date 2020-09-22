@@ -17,6 +17,11 @@
 		99321145250F301E004C21EA /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99321144250F301E004C21EA /* Config.swift */; };
 		99321147250F39A0004C21EA /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99321146250F39A0004C21EA /* Network.swift */; };
 		99321149250F4E27004C21EA /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99321148250F4E27004C21EA /* MovieModel.swift */; };
+		9961CD732518793500402658 /* ScrollInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9961CD722518793500402658 /* ScrollInfoViewController.swift */; };
+		9961CD762519716100402658 /* ScrollTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9961CD752519716100402658 /* ScrollTestViewController.swift */; };
+		9961CD792519B11500402658 /* CustomViewOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9961CD782519B11400402658 /* CustomViewOne.swift */; };
+		9961CD7C2519B12A00402658 /* CustomViewOne.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9961CD7B2519B12A00402658 /* CustomViewOne.xib */; };
+		9961CD802519BAC500402658 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9961CD7F2519BAC500402658 /* CustomViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,11 @@
 		99321144250F301E004C21EA /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		99321146250F39A0004C21EA /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		99321148250F4E27004C21EA /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		9961CD722518793500402658 /* ScrollInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollInfoViewController.swift; sourceTree = "<group>"; };
+		9961CD752519716100402658 /* ScrollTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollTestViewController.swift; sourceTree = "<group>"; };
+		9961CD782519B11400402658 /* CustomViewOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewOne.swift; sourceTree = "<group>"; };
+		9961CD7B2519B12A00402658 /* CustomViewOne.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomViewOne.xib; sourceTree = "<group>"; };
+		9961CD7F2519BAC500402658 /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
 		B77855EF3A8191F4D168C88A /* Pods-NaverMovieList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaverMovieList.release.xcconfig"; path = "Target Support Files/Pods-NaverMovieList/Pods-NaverMovieList.release.xcconfig"; sourceTree = "<group>"; };
 		FC4AB4BC11906A8B2E9A36FF /* Pods-NaverMovieList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaverMovieList.debug.xcconfig"; path = "Target Support Files/Pods-NaverMovieList/Pods-NaverMovieList.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,6 +106,11 @@
 				99321144250F301E004C21EA /* Config.swift */,
 				99321146250F39A0004C21EA /* Network.swift */,
 				99321148250F4E27004C21EA /* MovieModel.swift */,
+				9961CD722518793500402658 /* ScrollInfoViewController.swift */,
+				9961CD752519716100402658 /* ScrollTestViewController.swift */,
+				9961CD782519B11400402658 /* CustomViewOne.swift */,
+				9961CD7B2519B12A00402658 /* CustomViewOne.xib */,
+				9961CD7F2519BAC500402658 /* CustomViewController.swift */,
 			);
 			path = NaverMovieList;
 			sourceTree = "<group>";
@@ -163,6 +178,7 @@
 				9932113D250F0379004C21EA /* LaunchScreen.storyboard in Resources */,
 				9932113A250F0379004C21EA /* Assets.xcassets in Resources */,
 				99321138250F0376004C21EA /* Main.storyboard in Resources */,
+				9961CD7C2519B12A00402658 /* CustomViewOne.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,11 +232,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				99321149250F4E27004C21EA /* MovieModel.swift in Sources */,
+				9961CD732518793500402658 /* ScrollInfoViewController.swift in Sources */,
+				9961CD792519B11500402658 /* CustomViewOne.swift in Sources */,
 				99321147250F39A0004C21EA /* Network.swift in Sources */,
 				99321135250F0376004C21EA /* ViewController.swift in Sources */,
 				99321145250F301E004C21EA /* Config.swift in Sources */,
 				99321131250F0376004C21EA /* AppDelegate.swift in Sources */,
+				9961CD802519BAC500402658 /* CustomViewController.swift in Sources */,
 				99321133250F0376004C21EA /* SceneDelegate.swift in Sources */,
+				9961CD762519716100402658 /* ScrollTestViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

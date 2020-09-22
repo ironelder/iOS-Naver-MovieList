@@ -13,6 +13,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     @IBOutlet weak var customTableView : UITableView!
     
+    @IBOutlet weak var nextButton: UIButton!
+    
+
     let cellIdentifier:String = "cell"
     let korean = ["에스프레소","아메리카노","카페라떼","카페모카","바닐라라떼","카라멜 마끼아또","콜드브루"]
     let english = ["espresso","americano","cafe latte","cafe moca","vanila latte","caramel macchiato","cold brew"]
@@ -100,5 +103,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             }
         })
     }
+    
+    @IBAction func nextButtonClick(_ sender: Any) {
+        guard let uvc = self.storyboard?.instantiateViewController(identifier: "SecondVC") else {
+            return
+        }
+        uvc.modalTransitionStyle = UIModalTransitionStyle.coverVertical
+        uvc.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+        
+        self.present(uvc, animated:true)
+    }
+    
 }
 
