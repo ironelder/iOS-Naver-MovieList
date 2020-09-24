@@ -19,6 +19,16 @@ class CustomViewController: UIViewController {
     }
     
 
+    @IBAction func nextButtonClick(_ sender: Any) {
+        guard let uvc = self.storyboard?.instantiateViewController(identifier: "FourVC") else {
+            return
+        }
+        uvc.modalTransitionStyle = UIModalTransitionStyle.coverVertical
+        uvc.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+        
+        self.present(uvc, animated:true)
+    }
+    
     @IBAction func backButtonClick(_ sender: Any) {
         self.presentingViewController?.dismiss(animated: true)
     }

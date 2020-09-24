@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9736A40482263E4C73FA7AE2 /* Pods_NaverMovieList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8057004A0DD05FFC4C890D96 /* Pods_NaverMovieList.framework */; };
+		9904080B251AC38D00A163BA /* ScrollTestTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9904080A251AC38D00A163BA /* ScrollTestTwoViewController.swift */; };
 		99321131250F0376004C21EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99321130250F0376004C21EA /* AppDelegate.swift */; };
 		99321133250F0376004C21EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99321132250F0376004C21EA /* SceneDelegate.swift */; };
 		99321135250F0376004C21EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99321134250F0376004C21EA /* ViewController.swift */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		8057004A0DD05FFC4C890D96 /* Pods_NaverMovieList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NaverMovieList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9904080A251AC38D00A163BA /* ScrollTestTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollTestTwoViewController.swift; sourceTree = "<group>"; };
 		9932112D250F0375004C21EA /* NaverMovieList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NaverMovieList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99321130250F0376004C21EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99321132250F0376004C21EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				9961CD782519B11400402658 /* CustomViewOne.swift */,
 				9961CD7B2519B12A00402658 /* CustomViewOne.xib */,
 				9961CD7F2519BAC500402658 /* CustomViewController.swift */,
+				9904080A251AC38D00A163BA /* ScrollTestTwoViewController.swift */,
 			);
 			path = NaverMovieList;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				9961CD792519B11500402658 /* CustomViewOne.swift in Sources */,
 				99321147250F39A0004C21EA /* Network.swift in Sources */,
 				99321135250F0376004C21EA /* ViewController.swift in Sources */,
+				9904080B251AC38D00A163BA /* ScrollTestTwoViewController.swift in Sources */,
 				99321145250F301E004C21EA /* Config.swift in Sources */,
 				99321131250F0376004C21EA /* AppDelegate.swift in Sources */,
 				9961CD802519BAC500402658 /* CustomViewController.swift in Sources */,
